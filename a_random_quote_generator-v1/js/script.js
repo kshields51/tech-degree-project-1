@@ -1,11 +1,28 @@
 // FSJS - Random Quote Generator
 
-// Create the array of quote objects and name it quotes
+// Create the array of quote objects and name it quotes 
+
+
+
+
+               
+
+/*
+person2: ["quote goes here", "Here goes the location"],
+person3: ["quote goes here", "Here goes the location"],
+person4: ["quote goes here", "Here goes the location"],
+person5: ["quote goes here", "Here goes the location"]
+}
+*/
+
 
 
 
 // Create the getRandomQuuote function and name it getRandomQuote
+function getRandomQuote (array) {
+var randomNumber = Math.floor( Math.random() * 5 ) + 1
 
+}
 
 
 // Create the printQuote funtion and name it printQuote
