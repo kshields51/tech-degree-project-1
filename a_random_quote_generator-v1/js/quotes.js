@@ -7,9 +7,9 @@ var quotes = [
     },
     {
         quote: "The Earth is a very small stage in a vast cosmic arena.",
-        source: "Carl Sagan",
-        citation: "None",
-        year: "None"
+        source: "Carl Sagan"
+        
+        
     },
     {
         quote: "Ain't gonna be no rematch...ain't gonna be no rematch.",
@@ -20,8 +20,8 @@ var quotes = [
     {
         quote: "See ya in another life, brother.",
         source: "Desmond Hume",
-        citation: "Lost",
-        year: "None"
+        citation: "Lost"
+        
     },
     {
         quote: "I'll be back.",

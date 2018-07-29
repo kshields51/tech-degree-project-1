@@ -21,15 +21,34 @@ function printQuote (message) {
    
 
    for (prop in gatheredQuote) {
-    message+=' <p class="quote">' + gatheredQuote['quote'] + '</p>\
-  <p class="source">' + gatheredQuote['source'] + '\
+    message = ' <p class="quote">' + gatheredQuote['quote'] + '</p>\
+  <p class="source">' + gatheredQuote['source']
+  if ('undefined' === typeof(gatheredQuote['citation'])) {
+
+    
+  } else {
+      message +='<span class="citation">' + gatheredQuote['citation'] + '</span>'
+  }
+  if ("undefined" === typeof(gatheredQuote['year'])) {
+      
+  } else{
+    message +='<span class="year">' + gatheredQuote['year'] + '</span>\
+    </p>'}
+
+  
+  
+  
+  
+  /*
+  + '\
     <span class="citation">' + gatheredQuote['citation'] + '</span>\
     <span class="year">' + gatheredQuote['year'] + '</span>\
   </p>';
+  
+*/
 
    var outputDiv = document.getElementById('quote-box').innerHTML = message;
 
-   document.write(outputDiv)
    //loop hough the quotes in gathered Quote and appened to this
    
 
@@ -46,5 +65,5 @@ printQuote(message)
 
 
 // This event listener will respond to "Show another quote" button clicks
-// when user clicks anywhere on the button, the "printQuote" function is called
-//document.getElementById('loadQuote').addEventListener("click", printQuote, false);
+//when user clicks anywhere on the button, the "printQuote" function is called
+document.getElementById('loadQuote').addEventListener("click", printQuote, false);
